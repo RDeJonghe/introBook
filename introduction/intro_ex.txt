@@ -1,0 +1,71 @@
+1.
+
+mkdir my_folder
+
+cat > one.js
+console.log('this is file one');
+^D
+
+cat > two.js
+console.log('this is file two');
+^D
+
+node one.js
+node two.js
+
+2.
+
+rm -r my_folder
+
+3.
+
+mkdir preparations_exercises
+
+cd preparations_exercises
+
+touch foo.js
+
+let foo = 'bar';
+console.log(foo);
+foo;
+
+4.
+
+node foo.js
+
+5.
+
+.substring() - prototype, can be used with different things. Can be used with String.
+.create() - is static has to be used with 'Object' not a variable
+.fromCharCode() - is static has to be used with 'String'
+.slice() - prototype, can be used with different things. Can be used with Array and String.
+.toString() prototype, can be used with different things. Can be used with Number, Object, String, and Array
+
+6.
+
+index
+lazyDog
+operand2
+
+7.
+
+index
+lazyDog
+operand2
+CatName (for constructor functions)
+
+8.
+
+BIG_NUMBER
+
+9.
+
+snake_case
+quick_fox
+1stCharacter
+
+
+
+
+
+
