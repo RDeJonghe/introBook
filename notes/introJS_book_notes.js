@@ -63,7 +63,48 @@ THE BASICS
   - 'statement' is a term that is used loosely sometimes
   - a single line of code is sometimes referred to as a statement
 
+VARIABLES
+
+  - a variable is a named area of a program's memory space where the program can store data
+
+  - identifiers is a term that can be applied to many different names like variable names, property names,
+    function names, etc.
+
+  - some object properties are variables, the ones on the global object are variables
+
+  - you initialize a variable when you give it a value. 
+
+  - declarations always return undefined, even if they have an initial value
+
+  - variables aren't deeply-linked to each other (I think this is because they point to different places
+    in memory). So if a variable is changed and other variables have this same value, the other variables
+    won't be automatically changed
   
+  - Scope of a variable determines where it is available in the program
+  - block scope is inside of {} curly braces (but not all curly braces, not object literals for example)
+  - block usually refers to executable code between curly braces including curly braces of functions
+  - blocks can appear by themselves
+    {
+      // this is a block
+      let foo = 42;
+      console.log(foo);
+    }
+  - blocks are if... else, while, do... while, for, switch, try... catch. Technically functions aren't
+    blocks but they can be considered as such for practical purposes
+  - block scoped variables are not available outside of the block
+
+  - looks like there is a thing as function scope, not discussed in detail. Just to be aware
+
+INPUT/OUTPUT
+
+    - Computers take input, perform an action, provide output
+    - most basic is command line input from keyboard and providing output
+    - input/output cycle is at the heart of every computer program
+    
+
+
+
+
 
 
 

@@ -26,5 +26,3 @@
   console.log(`In 30 years you will be ${IN_30} years old.`);
   console.log(`In 40 years you will be ${IN_40} years old.`);
   */
-
-// 4. 
