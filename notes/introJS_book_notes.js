@@ -1,5 +1,8 @@
 /*
 Notes for the Introduction to Programming with JavaScript book.
+
+- npm is used with node in input/output and functions. Shows up in exercises here. See about installing npm
+
 Notes are organized by chapter, can search by chapter name
   Introduction
   Preparations
@@ -100,7 +103,79 @@ INPUT/OUTPUT
     - Computers take input, perform an action, provide output
     - most basic is command line input from keyboard and providing output
     - input/output cycle is at the heart of every computer program
+
+FUNCTIONS
+
+    - allow you to execute code multiple times
+    - parameters are between (), arguments are the values that are put in there
+    - In JS function names and parameter names are both considered variables
+    - Parameters are local variables becasue they only exist within the code block of the function
+
+    - invocation and invoke is the same as calling and call. Both used to say call a function
+    - Functions can return values with the return statement
+    - by default (without return keyword) functions will return undefined
+    - the caller is the code that calls the function
+
+    - predicates = functions that return boolean true/false
+
+    - can create nested function - but not a lot of info in the book on this. Not sure of use.
+    - global scoped variables are discouraged, can lead to bugs, limit scope of variables.
+
+    - methods are functions
+    - method invocation is the syntax with . and then method name and () so .toUpperCase() is method invocation
+    - can also make your own methods and call them with that syntax
+
+    - Mutating the Caller - when a method permanently alters the object that invokes the method, 
+    - Another way to say mutating is destructive
+    - Functions can also be written so they mutate the argument.
+    - So Functions and Methods can permanently change the caller, but not always
+
+    - immutable: primitive values (values never change), operations on these always return new values
+    - mutable: arrays and objects, operations on these may return a new value or may mutate the data, can go either way depending
+    - on use.
+
+    - JS is both pass by reference and pass by value
+      - pass by value when dealing with primitive values
+      - pass by reference when dealing with arrays and objects
+
+    - function composition: JavaScript lets us use a function call as an argument to another function
+    - good example, can use functions inside as arguments
+        function add(a, b) {
+            return a + b;
+          }
+
+        function subtract(a, b) {
+            return a - b;
+          }
+
+
+        function times(num1, num2) {
+            return num1 * num2;
+          }
+
+        console.log(times(add(20, 45), subtract(80, 10)));
     
+    - With function declarations (the standard way of setting them up with the funciton key word) you can call the function
+      before it is declared. (I think this is called hoisting)
+    
+    - function expression is when a function is saved to a variable (I think this is also called anonymous function)
+    - function expressions cannot be hoisted, it has to appear in the program first, then it can be called
+
+    - ALL JS functions are objects
+
+    - function declaration = the function keyword is first, this is the standard way of writing it
+    - function expression = does not have the function keyword first
+
+    - The Call Stack
+      - help JS keep track of function execution
+      - it works like a stack of books, you can put a new book on top, or remove topmost book
+      - the call stack puts information about current function on top of the stack, then removes it when function returns
+      - call stack has one initial item, called a stack frame (this is also sometimes called the "main" function), this is used
+        to keep track of what part of main program it is working on
+      - Stack is a "last in, first out structure"
+      
+
+
 
 
 
