@@ -174,7 +174,81 @@ FUNCTIONS
         to keep track of what part of main program it is working on
       - Stack is a "last in, first out structure"
       
+FLOW CONTROL
+  
+  - For if statements you can omit curly braces if it has a single statement/expression
+  - but this is generally bad practice since the {} make code easy to understand
+  - example is if(x === 3) console.log('x is three')
 
+  - expressions or values that an operator uses are called its operands
+  - so 4 < 5 left operand is 4, right operand is 5
+
+  - short circuit evaluation: &&, || these use short circuit evaluation
+  - once a determination is made and it can be true/false, JS short circuits it, doesn't need
+  - to check rest of expression if it's already able to determine true/false
+
+  - Operator precedence:
+    1. () parenthesis always go first  
+    2. <=, <, >, >= - Comparison
+    3. ==, != - Equality
+    4. && - Logical AND
+    5. || - Logical OR
+
+  - ternary expressions
+  - we can treat a ternary expression as a value (it doesn't do a return, it has a value)
+  - we can assign a ternary expression to a variable, and also pass it in as an argument
+
+  - switch statements
+  - fall throughs are when you don't want to use break, and you want it to fall through to the next case
+
+LOOPS AND ITERATING
+
+  - loops execute the code block as long as the condition remains truthy
+  - increment and decrement operators ++ --
+    - these can also go in front ++ num, or -- num, not just after. This has a minor affect on the order
+    - of how it's done
+    - generally use += and -= instead, better practice.
+    - only place ++ -- really is used is in a for loop to ++ the index
+    - for (var index = 0; index < 5; ++index) look here how it is ++index, instead of index++, order makes a difference I think
+
+  - Loop over arrays is very common, go over each element and perform a task/action
+  - have to be able to access and manipulate array elements with loops
+
+  - continue keyword
+  - allows you to skip certain elements in an array
+  - think that it continues and skips over it.
+  - a negated if conditional can work the same as continue keyword
+  - these two below are the same in function
+      1.    
+        let names = ['Chris', 'Kevin', 'Naveed', 'Pete', 'Victor'];
+        let upperNames = [];
+
+        for (let index = 0; index < names.length; index += 1) {
+          if (names[index] === 'Naveed') {
+            continue;
+          }
+        
+          let upperCaseName = names[index].toUpperCase();
+          upperNames.push(upperCaseName);
+        }
+        console.log(upperNames); // => ['CHRIS', 'KEVIN', 'PETE', 'VICTOR']
+      2.
+        let names = ['Chris', 'Kevin', 'Naveed', 'Pete', 'Victor'];
+        let upperNames = [];
+
+        for (let index = 0; index < names.length; index += 1) {
+          if (names[index] !== 'Naveed') {
+            let upperCaseName = names[index].toUpperCase();
+            upperNames.push(upperCaseName);
+          }
+        }
+        console.log(upperNames); // ['CHRIS', 'KEVIN', 'PETE', 'VICTOR']
+  
+
+
+
+  
+  
 
 
 
