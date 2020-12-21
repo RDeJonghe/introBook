@@ -1,18 +1,12 @@
 // Exercises for the Loops & Iterating Chapter from Intro to Programming with JavaScript
 
-let names = ['Chris', 'Kevin', 'Naveed', 'Pete', 'Victor'];
-let upperNames = [];
+// 1. Modify the age.js program you wrote in the exercises for the Input/Output chapter. The updated code should use a for loop to display the future ages.
 
-for (let index = 0; index < names.length; index += 1) {
-  if (names[index] === 'Naveed') {
-    continue;
-  }
-  if (names[index] === 'Chris') {
-    continue;
-  }
+let age = Number(prompt('How old are you?'));
 
-  let upperCaseName = names[index].toUpperCase();
-  upperNames.push(upperCaseName);
+console.log(`You are ${age} years old.`);
+ 
+for(let future = 10; future <= 40; future += 10) {
+  console.log(`In ${future} years you will be ${age + future}`);
 }
 
-console.log(upperNames); // => ['CHRIS', 'KEVIN', 'PETE', 'VICTOR']

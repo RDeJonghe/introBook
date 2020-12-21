@@ -244,6 +244,21 @@ LOOPS AND ITERATING
         }
         console.log(upperNames); // ['CHRIS', 'KEVIN', 'PETE', 'VICTOR']
   
+  - with continue and an if statement, you don't need to put the {} after the if, you can
+  - just write continue
+
+  - for each method for arrays
+  - JS has first class functions, this means they are values. They can be moved around, assigned as variables
+  - pass as arguments to other functions, use them as return values in other functions
+  - most JavaScript programmers prefer to use array looping abstractions like forEach to loop over arrays.
+
+  - Recursion
+  - recursive functions are functions that call themselves
+  - recursion is close enough to loops that we can say recursion is another way to create loops
+  - Every recursive function has a baseline condition that marks the end of the recursion
+  - Every recursive function has some code that recursively calls the function with a new argument
+  - Recursion = happen again
+  - The 'recursion' is the code that calls the function again
 
 
 
