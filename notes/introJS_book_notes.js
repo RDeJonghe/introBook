@@ -260,6 +260,28 @@ LOOPS AND ITERATING
   - Recursion = happen again
   - The 'recursion' is the code that calls the function again
 
+ARRAYS
+
+  - Arrays can have anything in them including other arrays and objects
+  - Arrays are indexed lists because each element has an index number
+  - How to access last element of an array if you don't know how many elements it has:
+      - myArray[myArray.length - 1]
+  - Can also add to the end of the array using .length
+      - myArrray[myArray.length] = 'Hello'; this adds it to the end, .length is always one more than the index
+  - Object.freeze()
+      - If you want the elements of the array to also be const, you can use the Object.freeze method:
+      - This makes it so you can't change the elements of an array
+      - Object.freeze() only goes one level deep, for sub arrays you have to freeze those also
+      - const names = Object.freeze(['Sally', 'Sue', 'Sam', Object.freeze(['Mark', 'Joe', 'John'])]);
+  - .concat() similar to .push but doesn't mutate original array
+      - can use this to save the new array to a variable, it combines original array with arguments passed to it
+
+  - .forEach() & .map() these are similar to loops, used to iterate over an array
+  - arrays are objects
+  - Array.isArray() you can use to see if it's an array. typeof will say object since arrays are objects
+  - Since arrays are objects you can actually put properties on them
+  
+
 
 
   
