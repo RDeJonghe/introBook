@@ -280,6 +280,46 @@ ARRAYS
   - arrays are objects
   - Array.isArray() you can use to see if it's an array. typeof will say object since arrays are objects
   - Since arrays are objects you can actually put properties on them
+
+OBJECTS
+
+
+MORE STUFF
+  - Some variables are pointers and point to a spot in memory, other variables hold the actual value
+  - pointers aka references can also say variable references spot in memory. Same meaning in JS
+  
+  - Primitive values
+  - Variables that have primitive values store those actual values at the memory location
+  - Variables are independent when they contain primitive values, you can change the value of one variable and it won't affect any other variable, even if they were set to be equal earlier.
+
+  - Objects
+  - Have two pointers to get to value
+  - for objects the variable is stored with a reference number for the values of the object
+  - with arrays if you set a variable to equal another array variable, they will point to the same spot in memory, so if one is changed they will both be changed.
+    - this is called aliasing (alias) since the two variables have different names but are really just aliases for the same spot in memory.
+  
+  - Javascript variables hold primitive values or pointers (in the case fo objects and arrays)
+  - Note that some operations mutate objects but others don't. Example .push mutates, .map does not
+
+  - Method Chaining
+  - you can call a method on the return value of another method
+  - Basically this is when you put a lot of things together with dot notation. .toUppercase().split(' ').reverse()
+  - Can change the syntax and put a new dot notation on the next line, it is still chained together
+
+  - Regex = Regular Expression
+  - A regex looks like a string written between a pair of forward-slash characters instead of quotes, e.g., /bob/
+  - A regex can, in a single-line, solve problems that may require dozens of lines using other techniques. If you encounter a string matching problem that needs more than a simple substring search using the indexOf or includes method, remember to look into using regex. However, don't get carried away: don't use regex because you can; use them when they yield simpler and more understandable solutions.
+
+  - Math Object
+  - Math object has many methods that you can use
+
+  - Dates
+  - Date constructor creates objects that represent a time and date. The objects provide methods that let you work with those values
+
+  - Exceptions
+  - Many errors in JavaScript are 'silent', not an impassable error
+  - exceptions are the bigger problems, these are the errors that need to be dealt with
+  - keywords try, catch are used to handle exceptions
   
 
 
