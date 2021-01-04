@@ -4,6 +4,30 @@
 
 // Note that it is possible to solve this problem without using map. However, our intent is to show how you can combine multiple functions to achieve a desired result.
 
+let arr = [
+  'a',
+  'abcd',
+  'abcde',
+  'abc',
+  'ab'
+];
+
+function oddLengths(array) {
+  let leng = [];
+  array.map(function(element) {
+    return leng.push(element.length);
+  });
+  return leng.filter(function(element) {
+    return element % 2 !== 0;
+  });
+}
+
+// console.log(oddLengths(arr));
+
+// => [1, 5, 3]
+
+// Answer
+/*
 let arr = ['a', 'abcd', 'abcde', 'abc', 'ab'];
 //console.log(oddLengths(arr)); // => [1, 5, 3]
 
@@ -14,4 +38,4 @@ function oddLengths(strings) {
 }
 
 console.log(oddLengths(arr));
-
+*/

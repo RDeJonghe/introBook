@@ -29,20 +29,34 @@ let myNums = [
 
 // MDN DOCUMENTATION WAY OF WRITING IT. This way is a simpler function, note how .reduce is called on the array. And how the simpler variable function is passed in as an argument with the accumlator value.
 
-const REDUCER = function(accumlator, element) {
-  return accumlator + element * element;
-};
+// Answer
+// const REDUCER = function(accumlator, element) {
+//   return accumlator + element * element;
+// };
 
-console.log(array.reduce(REDUCER, 0));
-console.log(myNums.reduce(REDUCER, 0));
+// console.log(array.reduce(REDUCER, 0));
+// console.log(myNums.reduce(REDUCER, 0));
+
 // Book solution way of doing this is by making a function that has an internal reduce inside of it and just calling that single function.
+
 function sumOfSquares(array) {
   return array.reduce(function(accumulator, element) {
     return accumulator + element * element;
   }, 0);
 }
-console.log(sumOfSquares(array));
+
 console.log(sumOfSquares(myNums));
+console.log(sumOfSquares(array));
+
+// Answer
+// function sumOfSquares(array) {
+//   return array.reduce(function(accumulator, element) {
+//     return accumulator + element * element;
+//   }, 0);
+// }
+// console.log(sumOfSquares(array));
+// console.log(sumOfSquares(myNums));
+
 // Book solution
 /*
 function sumOfSquares(numbers) {
@@ -57,4 +71,21 @@ let array = [
   7
 ];
 console.log(sumOfSquares(array)); // => 83
+*/
+
+// do an example with letters and a string.
+
+// Answer
+/*
+let letters = [
+  'b',
+  'a',
+  'c',
+  'k'
+];
+const REDUCER = function(accumlator, element) {
+  return accumlator + element.toUpperCase();
+};
+let upStr = letters.reduce(REDUCER, '');
+console.log(upStr);
 */

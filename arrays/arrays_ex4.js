@@ -7,11 +7,27 @@
 // If you have trouble using map to accomplish this, try it using a regular for loop instead.
 
 let myArray = [
-  1, 3, 6, 11,
-  4, 2, 4, 9,
-  17, 16, 0,
+  1,
+  3,
+  6,
+  11,
+  4,
+  2,
+  4,
+  9,
+  17,
+  16,
+  0
 ];
 
+// Can do with ternary statement
+let newArray = myArray.map(function(element) {
+  return element % 2 === 0 ? 'even' : 'odd';
+});
+
+console.log(newArray);
+
+/*
 const ODD_EVEN = [];
 
 myArray.map(function(num) {
@@ -24,9 +40,10 @@ myArray.map(function(num) {
 } );
 
 console.log(ODD_EVEN);
+/*
 
 // Now trying it with loop
-
+/*
 const EVEN_ODD = [];
 
 for(let el of myArray) {
@@ -48,5 +65,4 @@ let newArray = myArray.map(function(value) {
   }
 });
 console.log(newArray);
-
-
+*/
