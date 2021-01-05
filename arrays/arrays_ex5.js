@@ -16,6 +16,19 @@ let things = [
   false
 ];
 
+// Saved to a new array
+let int = [];
+
+function findIntegers(array) {
+  return array.filter(function(element) {
+    if (Number.isInteger(element)) {
+      return int.push(element);
+    }
+  });
+}
+findIntegers(things);
+console.log(int);
+
 // Good solution here, but try to do it and save it to a new array instead of just console logging it.
 /*
 function findIntegers(array) {

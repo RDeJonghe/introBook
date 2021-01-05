@@ -39,15 +39,6 @@ let myNums = [
 
 // Book solution way of doing this is by making a function that has an internal reduce inside of it and just calling that single function.
 
-function sumOfSquares(array) {
-  return array.reduce(function(accumulator, element) {
-    return accumulator + element * element;
-  }, 0);
-}
-
-console.log(sumOfSquares(myNums));
-console.log(sumOfSquares(array));
-
 // Answer
 // function sumOfSquares(array) {
 //   return array.reduce(function(accumulator, element) {

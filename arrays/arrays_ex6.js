@@ -21,6 +21,19 @@ function oddLengths(array) {
     return element % 2 !== 0;
   });
 }
+console.log(oddLengths(arr));
+
+/*
+function oddLengths(array) {
+  let leng = [];
+  array.map(function(element) {
+    return leng.push(element.length);
+  });
+  return leng.filter(function(element) {
+    return element % 2 !== 0;
+  });
+}
+*/
 
 // console.log(oddLengths(arr));
 
