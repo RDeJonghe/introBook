@@ -17,6 +17,7 @@ let monks = [
   'Ajann Pu'
 ];
 
+/*
 function matchMaker(array, regex) {
   let matched = [];
   for (let i = 0; i < array.length; i++) {
@@ -27,7 +28,9 @@ function matchMaker(array, regex) {
   return matched;
 }
 console.log(matchMaker(words, /lab/));
+*/
 
+/*
 function findMatch(array, regex) {
   let matched = [];
   for (let el of array) {
@@ -38,7 +41,7 @@ function findMatch(array, regex) {
   return matched;
 }
 console.log(findMatch(monks, /Ch/));
-
+*/
 // With for... of loop
 /*
 function matchMaker(array, regex) {
@@ -50,9 +53,10 @@ function matchMaker(array, regex) {
   }
   return matched;
 }
-*/
+
 
 console.log(matchMaker(words, /lab/));
+*/
 /*
 function match(array, pattern) {
   let matches = [];
